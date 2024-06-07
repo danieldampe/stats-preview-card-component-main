@@ -11,8 +11,8 @@ document.querySelector('#app').innerHTML = /* html */`
           media="(min-width: 768px)" 
           srcset=${imgHeaderDesktop} 
         >
+        <img class="w-full h-full object-cover" src=${imgHeaderMobile} alt="Header">
       </picture>
-      <img class="w-full h-full object-cover" src=${imgHeaderMobile} alt="">
     </header>
     <footer class="flex flex-col gap-y-9 pt-10 pb-9 px-8 bg-dark-desaturated-blue md:justify-between md:flex-grow md:p-[4.45rem] md:pb-[3.85rem]">
       <div class="md:text-left">
