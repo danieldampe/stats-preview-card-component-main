@@ -1,0 +1,23 @@
+{
+  "name": "stats-preview-card-component-main",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "standard": "^17.1.0",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+}
