@@ -1,4 +1,4 @@
-(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))l(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&l(r)}).observe(document,{childList:!0,subtree:!0});function a(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function l(e){if(e.ep)return;e.ep=!0;const t=a(e);fetch(e.href,t)}})();const o="https://danieldampe.github.io/stats-preview-card-component-main/assets/image-header-mobile-fYqb8l1J.jpg",i="https://danieldampe.github.io/stats-preview-card-component-main/assets/image-header-desktop-vbVtyz_d.jpg";document.querySelector("#app").innerHTML=`
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))a(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&a(r)}).observe(document,{childList:!0,subtree:!0});function l(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function a(e){if(e.ep)return;e.ep=!0;const t=l(e);fetch(e.href,t)}})();const o="https://danieldampe.github.io/stats-preview-card-component-main/assets/image-header-mobile-fYqb8l1J.jpg",i="https://danieldampe.github.io/stats-preview-card-component-main/assets/image-header-desktop-vbVtyz_d.jpg";document.querySelector("#app").innerHTML=`
   <div class="flex flex-col w-5/6 min-w-[326.5px] max-w-[1109px] mx-auto font-inter font-normal text-center text-white rounded-lg overflow-hidden md:flex-row-reverse">
     <header class="relative after:absolute after:top-0 after:bottom-0 after:block after:w-full after:bg-soft-violet after:opacity-50 md:basis-[48.75%] md:flex-shrink-0">
       <picture>
@@ -6,8 +6,8 @@
           media="(min-width: 768px)" 
           srcset=${i} 
         >
+        <img class="w-full h-full object-cover" src=${o} alt="Header">
       </picture>
-      <img class="w-full h-full object-cover" src=${o} alt="">
     </header>
     <footer class="flex flex-col gap-y-9 pt-10 pb-9 px-8 bg-dark-desaturated-blue md:justify-between md:flex-grow md:p-[4.45rem] md:pb-[3.85rem]">
       <div class="md:text-left">
